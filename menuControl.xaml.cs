@@ -63,9 +63,15 @@ namespace ControlNavegación
         {
             switch (categoria)
             {
-               
+
+
                 case "Frutas":
-                    return new List<string> { "Manzana", "Plátano", "Naranja", "Uva", "Fresa", "Pera", "Piña", "Mango", "Kiwi", "Cereza", "Melón", "Sandía", "Limón", "Mandarina", "Papaya", "Granada", "Ciruela", "Higo", "Dátil", "Coco", "Guayaba", "Maracuyá", "Tamarindo", "Lichi", "Pomelo", "Mora", "Fruta de la pasión", "Carambola", "Kumquat", "Níspero", "Chirimoya", "Caqui", "Membrillo", "Zarzamora", "Pitahaya", "Nectarina", "Castaña", "Cereza de Barbados", "Naranja sanguina", "Melocotón", "Níspero japonés", "Tamarillo", "Feijoa", "Rambután", "Tuna", "Grosella", "Ciruela pasa", "Yuzu", "Jabuticaba", "Noni" };
+                    return new List<string> { "Manzana", "Plátano", "Naranja", "Uva", "Fresa", "Pera", "Piña", "Mango", "Kiwi", "Cereza", 
+                                              "Melón", "Sandía", "Limón", "Mandarina", "Papaya", "Granada", "Ciruela", "Higo", "Dátil", "Coco", 
+                                              "Guayaba", "Maracuyá", "Tamarindo", "Lichi", "Pomelo", "Mora", "Fruta de la pasión", "Carambola", 
+                                              "Kumquat", "Níspero", "Chirimoya", "Caqui", "Membrillo", "Zarzamora", "Pitahaya", "Nectarina", "Castaña",
+                                              "Cereza de Barbados", "Naranja sanguina", "Melocotón", "Níspero japonés", "Tamarillo", "Feijoa", "Rambután", 
+                                              "Tuna", "Grosella", "Ciruela pasa", "Yuzu", "Jabuticaba", "Noni" };
                
                
                 default:
