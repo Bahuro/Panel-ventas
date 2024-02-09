@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ControlNavegación"
         mc:Ignorable="d"
-        Title="Menu" Height="200" Width="400"
+        Title="Menu" Height="300" Width="500"
         ResizeMode="CanMinimize" WindowStyle="SingleBorderWindow">
 
     <StackPanel Margin="5">
@@ -16,7 +16,7 @@
         <Grid>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="180"/>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
@@ -31,7 +31,8 @@
                 <Label Content="Control de Navegacion" HorizontalAlignment="Center" FontFamily="impact" Foreground="White"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Orientation="Vertical" Margin="5">
-                <Button  x:Name="controlN"   Content="TAB CONTROL" Margin="0,4" Click="controlN_Click" Background="#FF245975" />
+                <Button  x:Name="controlN"   Content="TAB CONTROL" Margin="0,4" Click="controlN_Click" Background="#FF245975"  Width="120"/>
+                <Button x:Name="menu"   Content="Menu" Width="120" Background="#FF245975" Click="menu_Click"/>
 
             </StackPanel>
 

@@ -15,28 +15,13 @@ using System.Windows.Shapes;
 namespace ControlNavegación
 {
     /// <summary>
-    /// Lógica de interacción para Menu.xaml
+    /// Lógica de interacción para menuControl.xaml
     /// </summary>
-    public partial class Menu : Window
+    public partial class menuControl : Window
     {
-        public Menu()
+        public menuControl()
         {
             InitializeComponent();
-        }
-
-        private void controlN_Click(object sender, RoutedEventArgs e)
-        {
-            controlNav cn = new controlNav();
-            cn.Show();
-            this.Close();
-
-        }
-
-        private void menu_Click(object sender, RoutedEventArgs e)
-        {
-            menuControl mc = new menuControl();
-            mc.Show();
-            this.Close();
         }
     }
 }
