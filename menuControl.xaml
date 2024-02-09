@@ -14,15 +14,15 @@
 
         <!-- Menú -->
         <Menu Grid.Column="0">
-            <MenuItem Header="Inicio"/>
-            <MenuItem Header="Productos"/>
-            <MenuItem Header="Carrito de Compras"/>
-            <MenuItem Header="Salir"/>
+            <MenuItem Header="Inicio" Click="MenuItem_Click"/>
+            <MenuItem Header="Productos" Click="MenuItem_Click"/>
+            <MenuItem Header="Carrito de Compras" Click="MenuItem_Click"/>
+            <MenuItem Header="Salir" Click="MenuItem_Click"/>
         </Menu>
 
-        
-        <Grid Grid.Column="1">
-           
+        <!-- Contenido -->
+        <Grid Grid.Column="1" x:Name="contentGrid">
+            <TextBlock Text="Bienvenido a la tienda de ventas." HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </Grid>
 </Window>
