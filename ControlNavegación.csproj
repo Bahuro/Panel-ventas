@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="download.jpg" />
     <None Remove="Imagenes\Catalog-scaled.jpg" />
     <None Remove="Imagenes\emblue-contactos-no-leen-emails.jpg" />
     <None Remove="Imagenes\FondoControl.png" />
@@ -28,6 +29,10 @@
     <Content Include="Imagenes\ventas-control.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="download.jpg" />
   </ItemGroup>
 
 </Project>

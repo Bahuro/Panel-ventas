@@ -69,6 +69,8 @@ namespace ControlNavegación
         new Producto { NombreP = "Desmaquillador Doble Fase", Precio = 37.50 },
         new Producto { NombreP = "Mascarilla Antiarrugas y Antiedad", Precio = 14 },
         new Producto { NombreP = "Totallist Aclarante Concha de nacar", Precio = 28.50 },
+        new Producto { NombreP = "Mascarilla Antiarrugas y Antiedad", Precio = 14 },
+        new Producto { NombreP = "Totallist Aclarante Concha de nacar", Precio = 28.50 },
    
  };
 
