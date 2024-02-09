@@ -8,4 +8,26 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Imagenes\Catalog-scaled.jpg" />
+    <None Remove="Imagenes\emblue-contactos-no-leen-emails.jpg" />
+    <None Remove="Imagenes\FondoControl.png" />
+    <None Remove="Imagenes\ventas-control.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Imagenes\Catalog-scaled.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\emblue-contactos-no-leen-emails.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\FondoControl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagenes\ventas-control.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

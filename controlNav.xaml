@@ -10,17 +10,30 @@
         <TabControl SelectionChanged="TabControl_SelectionChanged">
             <TabItem Header="Inicio" Name="InicioTab">
                 <Grid>
-                    <TextBlock Text="Bienvenido a la página de inicio." HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="39*"/>
+                        <ColumnDefinition Width="358*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Imagenes/ventas-control.jpg"/>
+                    </Grid.Background>
+                    <TextBlock Text="Bienvenido a la página de inicio." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,10,0,0" FontFamily="impact" FontSize="20" Grid.Column="1"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Productos" Name="ProductosTab">
                 <Grid>
-                    <TextBlock Text="Aquí están los productos disponibles." HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Imagenes/Catalog-scaled.jpg"/>
+                    </Grid.Background>
+                    <TextBlock Text="Aquí están los productos disponibles." HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="impact" FontSize="20"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Contacto" Name="ContactoTab">
                 <Grid>
-                    <TextBlock Text="Póngase en contacto con nosotros." HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Imagenes/emblue-contactos-no-leen-emails.jpg"/>
+                    </Grid.Background>
+                    <TextBlock Text="Póngase en contacto con nosotros." HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="impact" FontSize="20"/>
                 </Grid>
             </TabItem>
         </TabControl>
