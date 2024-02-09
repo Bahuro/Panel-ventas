@@ -48,13 +48,13 @@ namespace ControlNavegación
         {
             // Lógica para mostrar 5 personas en la vista de Inicio
             List<string> personas = new List<string>
- {
-        "Persona 1",
-        "Persona 2",
-        "Persona 3",
-        "Persona 4",
-        "Persona 5"
- };
+            {
+                  "Dianita ",
+               "Roimer",
+                 "Jimmy",
+               "Dayana ",
+                   "Andre"
+             };
 
             // Limpiar contenido existente y agregar nuevos elementos
             InicioTab.Content = new System.Windows.Controls.ListBox { ItemsSource = personas };
@@ -66,9 +66,12 @@ namespace ControlNavegación
             // Por ejemplo, puedes cargar datos de una base de datos o una lista predefinida
             List<Producto> productos = new List<Producto>
  {
-        new Producto { Nombre = "Producto 1", Precio = 10 },
-        new Producto { Nombre = "Producto 2", Precio = 20 },
-        new Producto { Nombre = "Producto 3", Precio = 30 },
+        new Producto { Nombre = "Hydra-Lip Brillo Labial", Precio = 39.50 },
+        new Producto { Nombre = "Total Block Jumbo SPF 100", Precio = 65 },
+        new Producto { Nombre = "Ccori Crsital Rose", Precio = 95.50 },
+        new Producto { Nombre = "Desmaquillador Doble Fase", Precio = 37.50 },
+        new Producto { Nombre = "Mascarilla Antiarrugas y Antiedad", Precio = 14 },
+        new Producto { Nombre = "Totallist Aclarante Concha de nacar", Precio = 28.50 },
      // Agrega más productos según sea necesario
  };
 
@@ -89,7 +92,7 @@ namespace ControlNavegación
         public class Producto
         {
             public string Nombre { get; set; }
-            public decimal Precio { get; set; }
+            public double Precio { get; set; }
         }
 
     }
