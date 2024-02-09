@@ -31,7 +31,7 @@
                 <Label Content="Control de Navegacion" HorizontalAlignment="Center" FontFamily="impact" Foreground="White"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Orientation="Vertical" Margin="5">
-                <Button  x:Name="controlN"   Content="TAB CONTROL" Margin="0,4" Click="controlN_Click" />
+                <Button  x:Name="controlN"   Content="TAB CONTROL" Margin="0,4" Click="controlN_Click" Background="#FF245975" />
 
             </StackPanel>
 

@@ -82,7 +82,7 @@ namespace ControlNavegación
             
             List<Contacto> contactito = new List<Contacto>
             {
-                 new Contacto { NombreC = "Hydra-Lip Brillo Labial", Numero = "845849483984" },
+                 new Contacto {NombreC = "JUAN ", Numero = "+51 945037467"  },
                
              };
 
