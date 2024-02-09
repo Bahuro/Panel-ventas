@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace ControlNavegación
@@ -20,23 +22,75 @@ namespace ControlNavegación
                 switch (header)
                 {
                     case "Inicio":
-                        contentGrid.Children.Clear();
-                        contentGrid.Children.Add(new TextBlock() { Text = "Estás en la página de Inicio." });
+                        MostrarInicio();
                         break;
                     case "Productos":
-                        contentGrid.Children.Clear();
-                        contentGrid.Children.Add(new TextBlock() { Text = "Aquí están los productos disponibles." });
+                        
                         break;
                     case "Carrito de Compras":
-                        contentGrid.Children.Clear();
-                        contentGrid.Children.Add(new TextBlock() { Text = "Tu carrito de compras está vacío." });
+                        MostrarCarrito();
                         break;
                     case "Salir":
+                        SalirAplicacion();
+                        break;
+                    default:
                         
+                        MostrarProductos(header);
                         break;
                 }
             }
         }
 
+        private void MostrarInicio()
+        {
+            LimpiarContentGrid();
+            contentGrid.Children.Add(new TextBlock() { Text = "Estás en la página de Inicio." });
+        }
+
+        private void MostrarProductos(string categoria)
+        {
+            LimpiarContentGrid();
+            List<string> productos = ObtenerProductosPorCategoria(categoria);
+            ListBox listBoxProductos = new ListBox();
+            foreach (string producto in productos)
+            {
+                listBoxProductos.Items.Add(producto);
+            }
+            contentGrid.Children.Add(listBoxProductos);
+        }
+
+        private List<string> ObtenerProductosPorCategoria(string categoria)
+        {
+            switch (categoria)
+            {
+               
+                case "Frutas":
+                    return new List<string> { "Manzana", "Plátano", "Naranja" };
+               
+               
+                default:
+                    return new List<string>(); // Retorna una lista vacía si no se encuentra la categoría
+            }
+        }
+
+        private void MostrarCarrito()
+        {
+            LimpiarContentGrid();
+            contentGrid.Children.Add(new TextBlock() { Text = "Tu carrito de compras está vacío." });
+        }
+
+        private void SalirAplicacion()
+        {
+            MessageBoxResult result = MessageBox.Show("¿Estás seguro de que quieres salir?", "Salir", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
+        }
+
+        private void LimpiarContentGrid()
+        {
+            contentGrid.Children.Clear();
+        }
     }
 }

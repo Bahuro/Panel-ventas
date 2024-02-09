@@ -14,13 +14,29 @@
 
         <!-- Menú -->
         <Menu Grid.Column="0">
-            <MenuItem Header="Inicio" Click="MenuItem_Click"/>
-            <MenuItem Header="Productos" Click="MenuItem_Click"/>
-            <MenuItem Header="Carrito de Compras" Click="MenuItem_Click"/>
-            <MenuItem Header="Salir" Click="MenuItem_Click"/>
+            <MenuItem Header="Inicio" Click="MenuItem_Click">
+                <TextBlock Text="Bienvenido a la tienda de ventas." HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </MenuItem>
+                
+                
+            
+            <MenuItem Header="Productos" Click="MenuItem_Click">
+                
+                <MenuItem Header="Frutas" Click="MenuItem_Click"/>
+                
+                
+            </MenuItem>
+            <MenuItem Header="Carrito de Compras" Click="MenuItem_Click">
+                <MenuItem Header="Continuar" Click="MenuItem_Click"/>
+                <MenuItem Header="Nuuevo" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="Salir" Click="MenuItem_Click">
+                <MenuItem Header="si" Click="MenuItem_Click"/>
+                
+            </MenuItem>
         </Menu>
 
-        <!-- Contenido -->
+       
         <Grid Grid.Column="1" x:Name="contentGrid">
             <TextBlock Text="Bienvenido a la tienda de ventas." HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
