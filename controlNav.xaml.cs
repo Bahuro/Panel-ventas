@@ -23,6 +23,8 @@ namespace ControlNavegación
         {
             InitializeComponent();
             MostrarPersonas();
+            this.KeyDown += MainWindow_KeyDown;
+
         }
         private void TabControl_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
@@ -94,6 +96,18 @@ namespace ControlNavegación
             public string Nombre { get; set; }
             public double Precio { get; set; }
         }
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Verificar si la tecla presionada es la tecla Retroceso
+            if (e.Key == Key.Escape)
+            {
+                Menu m = new Menu();
+                m.Show();
+                this.Close();
+            }
+
+        }
+
 
     }
 }
