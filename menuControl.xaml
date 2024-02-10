@@ -26,12 +26,15 @@
             <MenuItem Header="Productos" Click="MenuItem_Click">
 
                 <MenuItem Header="Frutas" Click="MenuItem_Click"/>
+                <MenuItem Header="Carnes" Click="MenuItem_Click"/>
+                <MenuItem Header="Lacteos" Click="MenuItem_Click"/>
+                <MenuItem Header="Bebidas" Click="MenuItem_Click"/>
 
 
             </MenuItem>
             <MenuItem Header="Carrito de Compras" Click="MenuItem_Click">
                 <MenuItem Header="Continuar" Click="MenuItem_Click"/>
-                <MenuItem Header="Nuuevo" Click="MenuItem_Click"/>
+                <MenuItem Header="Nuevo" Click="MenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="Salir" Click="MenuItem_Click">
                 <MenuItem Header="si" Click="MenuItem_Click"/>
