@@ -16,6 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <!-- Título -->
@@ -23,11 +24,14 @@
             <Label Content="Control de Navegación" HorizontalAlignment="Center" FontFamily="impact" FontSize="24" Foreground="White"/>
         </StackPanel>
 
-        <!-- Contenedor de Botones -->
+        <!-- Contenedor de Botones Principales -->
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="controlN" Content="FUNCIONALIDAD" Margin="10" Click="controlN_Click" Background="#FFA52A2A" Foreground="White" BorderBrush="Transparent"  Width="150" Height="40"  ToolTip="Abre una ventana con un control de pestañas para administrar diferentes secciones (Inicio, Productos y Contacto)."/>
             <Button x:Name="menu" Content="MENU BARRA" Margin="10" Width="150" Height="40" Background="#FFA52A2A" Foreground="White" BorderBrush="Transparent" Click="menu_Click" ToolTip="Abre una ventana con un menú para navegar por diferentes secciones (Inicio, Productos, Carrito y Salir)."/>
         </StackPanel>
-
+        <!-- Contenedor de Boton Salir -->
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Margin="0,15,0,15">
+            <Button x:Name="cerrarAppButton" Content="Cerrar Aplicación"  Click="cerrarAppButton_Click" Background="#FFA52A2A" Foreground="White" BorderBrush="Transparent"  Width="150" Height="40"  ToolTip="Cierra la Aplicación."/>
+        </StackPanel>
     </Grid>
 </Window>

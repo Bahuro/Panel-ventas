@@ -26,13 +26,32 @@
     <Content Include="Imagenes\FondoControl.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Imagenes\ventas-control.jpg">
+    <Content Include="Imagenes\menu_inicio\ventas-control.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="download.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Imagenes\iconos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Imagenes\iconos\bebida.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\iconos\carne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\iconos\fruta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Imagenes\iconos\lacteo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -8,7 +8,7 @@
         Title="controlNav" Height="450" Width="800">
     <Grid>
         <TabControl SelectionChanged="TabControl_SelectionChanged">
-            <TabItem Header="Inicio" Name="InicioTab">
+            <TabItem Header="Inicio" Name="InicioTab" ToolTip="Muestra una lista de personas">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="39*"/>
@@ -18,25 +18,25 @@
                         <ImageBrush ImageSource="/Imagenes/ventas-control.jpg"/>
                     </Grid.Background>
                     <TextBlock Text="Bienvenido a la página de inicio." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,10,0,0" FontFamily="impact" FontSize="20" Grid.Column="1"/>
+
                 </Grid>
             </TabItem>
-            <TabItem Header="Productos" Name="ProductosTab">
+            <TabItem Header="Productos" Name="ProductosTab" ToolTip="Muestra una tabla de productos con sus precios">
                 <Grid>
                     <Grid.Background>
                         <ImageBrush ImageSource="/Imagenes/Catalog-scaled.jpg"/>
                     </Grid.Background>
-                    <TextBlock Text="Aquí están los productos disponibles." HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="impact" FontSize="20"/>
+
                 </Grid>
             </TabItem>
-            <TabItem Header="Contacto" Name="ContactoTab">
+            <TabItem Header="Contacto" Name="ContactoTab" ToolTip="Muestra una tabla con información de contacto">
                 <Grid>
                     <Grid.Background>
                         <ImageBrush ImageSource="/Imagenes/emblue-contactos-no-leen-emails.jpg"/>
                     </Grid.Background>
-                    <TextBlock Text="Póngase en contacto con nosotros." HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="impact" FontSize="20"/>
+
                 </Grid>
             </TabItem>
         </TabControl>
     </Grid>
-
 </Window>
