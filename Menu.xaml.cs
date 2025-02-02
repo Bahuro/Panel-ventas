@@ -1,22 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace ControlNavegación
 {
-    /// <summary>
-    /// Lógica de interacción para Menu.xaml
-    /// </summary>
     public partial class Menu : Window
     {
         public Menu()
@@ -30,7 +16,6 @@ namespace ControlNavegación
             controlNav cn = new controlNav();
             cn.Show();
             this.Close();
-
         }
 
         private void menu_Click(object sender, RoutedEventArgs e)
@@ -39,16 +24,20 @@ namespace ControlNavegación
             mc.Show();
             this.Close();
         }
+
+        private void cerrarAppButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
-
             if (e.Key == Key.Escape)
             {
                 Menu m = new Menu();
                 m.Show();
                 this.Close();
             }
-
         }
     }
 }
