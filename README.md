@@ -94,7 +94,7 @@ Las contribuciones son bienvenidas. Para contribuir:
 5. Abre un Pull Request
 
 ## 📄 Licencia
-Este proyecto está bajo la Licencia MIT - Ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+Este proyecto está bajo la Licencia MIT - Ver el archivo [LICENSE.md](LICENSE) para más detalles.
 
 ## ✉️ Contacto
 Juan Roimer Bautista Huingo - bautistahuingojuanroimer@gmail.com
